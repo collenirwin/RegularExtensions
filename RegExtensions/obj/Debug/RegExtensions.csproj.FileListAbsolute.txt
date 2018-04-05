@@ -1,0 +1,5 @@
+E:\School2018.1\Prog\RegExtensions\RegExtensions\bin\Debug\RegExtensions.dll
+E:\School2018.1\Prog\RegExtensions\RegExtensions\bin\Debug\RegExtensions.pdb
+E:\School2018.1\Prog\RegExtensions\RegExtensions\obj\Debug\RegExtensions.csprojResolveAssemblyReference.cache
+E:\School2018.1\Prog\RegExtensions\RegExtensions\obj\Debug\RegExtensions.dll
+E:\School2018.1\Prog\RegExtensions\RegExtensions\obj\Debug\RegExtensions.pdb
