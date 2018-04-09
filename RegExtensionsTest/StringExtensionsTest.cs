@@ -104,5 +104,17 @@ namespace RegExtensionsTest
                     m => char.IsUpper(m.Value[0]) ? m.Value.ToLower() : m.Value.ToUpper(),
                     RegexOptions.IgnoreCase, new TimeSpan(100)));
         }
+
+        [TestMethod]
+        public void RegexSplit()
+        {
+            CollectionAssert.AreEqual(Regex.Split("1  2    3", @"\s+"), "1  2    3".RegexSplit(@"\s+"));
+
+            CollectionAssert.AreEqual(Regex.Split("1a2A3", "a", RegexOptions.IgnoreCase),
+                "1a2A3".RegexSplit("a", RegexOptions.IgnoreCase));
+
+            CollectionAssert.AreEqual(Regex.Split("1a2A3", "a", RegexOptions.IgnoreCase, new TimeSpan(100)),
+                "1a2A3".RegexSplit("a", RegexOptions.IgnoreCase, new TimeSpan(100)));
+        }
     }
 }
