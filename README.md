@@ -31,5 +31,5 @@ This small project aims to provide extension method versions of every **static**
 
 ### RegexSplit
 ```csharp
-"Wow     here's  lots of\nspace".RegexSplit("[a-z]+", "321"); // "wow", "here's", "lots", "of", "space"
+"Wow     here's  lots of\nspace".RegexSplit(@"\s+"); // "wow", "here's", "lots", "of", "space"
 ```
