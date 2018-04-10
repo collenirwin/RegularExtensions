@@ -8,28 +8,33 @@ This small project aims to provide extension method versions of every **static**
 # Examples
 
 ### IsMatch
+Wraps [`Regex.IsMatch`](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.ismatch?view=netframework-4.7.1)
 ```csharp
 "1234".IsMatch(@"\d{4}"); // true
 "Hello, world!".IsMatch("hello", RegexOptions.IgnoreCase); // true
 ```
 
 ### Match
+Wraps [`Regex.Match`](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.match?view=netframework-4.7.1)
 ```csharp
 "123abc".Match("[a-z]"); // "a"
 ```
 
 ### Matches
+Wraps [`Regex.Matches`](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.matches?view=netframework-4.7.1)
 ```csharp
 "123abc".Matches("[a-z]"); // "a", "b", "c"
 ```
 
 ### RegexReplace
+Wraps [`Regex.Replace`](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.replace?view=netframework-4.7.1)
 ```csharp
 "123abc".RegexReplace("[a-z]+", "321"); // "123321"
 "123abc".RegexReplace(@"\d", m => (int.Parse(m.Value) + 1).ToString()); // "234abc"
 ```
 
 ### RegexSplit
+Wraps [`Regex.Split`](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.split?view=netframework-4.7.1)
 ```csharp
 "Wow     here's  lots of\nspace".RegexSplit(@"\s+"); // "wow", "here's", "lots", "of", "space"
 ```
