@@ -192,7 +192,7 @@ namespace RegExtensions
         /// A time-out interval, or <see cref="Regex.InfiniteMatchTimeout"/> to indicate that the method should not time out.
         /// </param>
         /// <returns>The result of text.Matches(...) cast as an IEnumerable of Match objects</returns>
-        public static IEnumerable<Match> EnumerableMatches(this string text, string regex,
+        public static IEnumerable<Match> EnumerateMatches(this string text, string regex,
             RegexOptions options, TimeSpan timeout)
         {
             return text.Matches(regex, options, timeout).Cast<Match>();

@@ -130,7 +130,7 @@
             <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
             <returns>The result of text.Matches(...) cast as an IEnumerable of Match objects</returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.EnumerableMatches(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
+        <member name="M:RegExtensions.StringExtensions.EnumerateMatches(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
             <summary>
             Searches the input string for the first occurrence of the specified regular expression,
             using the specified matching options and time-out interval.

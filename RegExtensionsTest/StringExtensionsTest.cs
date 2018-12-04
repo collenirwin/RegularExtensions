@@ -70,7 +70,7 @@ namespace RegExtensionsTest
             Assert.AreEqual(
                 toString(Regex.Matches("ABcd", @"[a-z]",
                     RegexOptions.IgnoreCase, new TimeSpan(100)).Cast<Match>()),
-                toString("ABcd".EnumerableMatches(@"[a-z]",
+                toString("ABcd".EnumerateMatches(@"[a-z]",
                     RegexOptions.IgnoreCase, new TimeSpan(100))));
         }
 
