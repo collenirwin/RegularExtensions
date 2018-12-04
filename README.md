@@ -1,9 +1,9 @@
 # RegExtensions
 C# extension methods for Regular Expressions
 
-This small project aims to provide extension method versions of every **static** method in the [`System.Text.RegularExpressions.Regex`](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex?view=netframework-4.7.1) class. Wrapped methods include `IsMatch`, `Match`, `Matches`, `Replace` (use `RegexReplace`), and `Split` (use `RegexSplit`) with all of their overloads.
+This small project aims to provide extension method versions of every `static` method in the [`System.Text.RegularExpressions.Regex`](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex?view=netframework-4.7.1) class. Wrapped methods include `IsMatch`, `Match`, `Matches`, `Replace` (use `RegexReplace`), and `Split` (use `RegexSplit`) with all of their overloads.
 
-`EnumerableMatches` is currently the only addition. It simply casts the result of `Matches` to `IEnumerable<Match>`.
+`EnumerateMatches` is currently the only addition. It simply casts the result of `Matches` to `IEnumerable<Match>`.
 
 # Examples
 
@@ -24,6 +24,13 @@ Wraps [`Regex.Match`](https://docs.microsoft.com/en-us/dotnet/api/system.text.re
 Wraps [`Regex.Matches`](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex.matches?view=netframework-4.7.1)
 ```csharp
 "123abc".Matches("[a-z]"); // "a", "b", "c"
+```
+
+### EnumerateMatches
+Casts result of `Matches` to `IEnumerable<Match>`
+```chsarp
+// LINQ ready
+"123abc".EnumerateMatches(@"\d").Select(x => int.Parse(x.Value)); // 1, 2, 3
 ```
 
 ### RegexReplace
