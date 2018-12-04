@@ -28,7 +28,7 @@ Wraps [`Regex.Matches`](https://docs.microsoft.com/en-us/dotnet/api/system.text.
 
 ### EnumerateMatches
 Casts result of `Matches` to `IEnumerable<Match>`
-```chsarp
+```csharp
 // LINQ ready
 "123abc".EnumerateMatches(@"\d").Select(x => int.Parse(x.Value)); // 1, 2, 3
 ```
