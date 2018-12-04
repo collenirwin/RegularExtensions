@@ -162,7 +162,7 @@ namespace RegExtensions
         /// <param name="text">The string to search for a match.</param>
         /// <param name="regex">The regular expression pattern to match.</param>
         /// <returns>The result of text.Matches(...) cast as an IEnumerable of Match objects</returns>
-        public static IEnumerable<Match> EnumerableMatches(this string text, string regex)
+        public static IEnumerable<Match> EnumerateMatches(this string text, string regex)
         {
             return text.Matches(regex).Cast<Match>();
         }
@@ -175,7 +175,7 @@ namespace RegExtensions
         /// <param name="regex">The regular expression pattern to match.</param>
         /// <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
         /// <returns>The result of text.Matches(...) cast as an IEnumerable of Match objects</returns>
-        public static IEnumerable<Match> EnumerableMatches(this string text, string regex,
+        public static IEnumerable<Match> EnumerateMatches(this string text, string regex,
             RegexOptions options)
         {
             return text.Matches(regex, options).Cast<Match>();

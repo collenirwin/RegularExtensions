@@ -57,15 +57,15 @@ namespace RegExtensionsTest
         }
 
         [TestMethod]
-        public void EnumerableMatches()
+        public void EnumerateMatches()
         {
             Func<IEnumerable<Match>, string> toString = (m) => string.Join(", ", m);
 
             Assert.AreEqual(toString(Regex.Matches("1234", @"\d").Cast<Match>()),
-                toString("1234".EnumerableMatches(@"\d")));
+                toString("1234".EnumerateMatches(@"\d")));
 
             Assert.AreEqual(toString(Regex.Matches("ABcd", @"[a-z]", RegexOptions.IgnoreCase).Cast<Match>()),
-                toString("ABcd".EnumerableMatches(@"[a-z]", RegexOptions.IgnoreCase)));
+                toString("ABcd".EnumerateMatches(@"[a-z]", RegexOptions.IgnoreCase)));
 
             Assert.AreEqual(
                 toString(Regex.Matches("ABcd", @"[a-z]",

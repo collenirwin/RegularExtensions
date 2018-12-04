@@ -3,3 +3,9 @@ E:\School2018.1\Prog\RegExtensions\RegExtensions\bin\Debug\RegExtensions.pdb
 E:\School2018.1\Prog\RegExtensions\RegExtensions\obj\Debug\RegExtensions.csprojResolveAssemblyReference.cache
 E:\School2018.1\Prog\RegExtensions\RegExtensions\obj\Debug\RegExtensions.dll
 E:\School2018.1\Prog\RegExtensions\RegExtensions\obj\Debug\RegExtensions.pdb
+E:\git\RegExtensions\RegExtensions\bin\Debug\RegExtensions.xml
+E:\git\RegExtensions\RegExtensions\bin\Debug\RegExtensions.dll
+E:\git\RegExtensions\RegExtensions\bin\Debug\RegExtensions.pdb
+E:\git\RegExtensions\RegExtensions\obj\Debug\RegExtensions.csprojResolveAssemblyReference.cache
+E:\git\RegExtensions\RegExtensions\obj\Debug\RegExtensions.dll
+E:\git\RegExtensions\RegExtensions\obj\Debug\RegExtensions.pdb
