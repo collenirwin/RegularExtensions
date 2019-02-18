@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RegExtensions;
+using RegularExtensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;

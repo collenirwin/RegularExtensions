@@ -1,16 +1,15 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>RegExtensions</name>
+        <name>RegularExtensions</name>
     </assembly>
     <members>
-        <member name="T:RegExtensions.StringExtensions">
+        <member name="T:RegularExtensions.StringExtensions">
             <summary>
-            Extension versions of the static methods in the
-            <see cref="T:System.Text.RegularExpressions.Regex"/> class
+            Extension versions of the static methods in the <see cref="T:System.Text.RegularExpressions.Regex"/> class
             </summary>
         </member>
-        <member name="M:RegExtensions.StringExtensions.IsMatch(System.String,System.String)">
+        <member name="M:RegularExtensions.StringExtensions.IsMatch(System.String,System.String)">
             <summary>
             Indicates whether the regular expression specified in the Regex constructor finds a match in a specified input string.
             </summary>
@@ -18,7 +17,7 @@
             <param name="regex">The regular expression pattern to match.</param>
             <returns>true if the regular expression finds a match; otherwise, false.</returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
+        <member name="M:RegularExtensions.StringExtensions.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
             <summary>
             Indicates whether the specified regular expression finds a match in the specified input string,
             using the specified matching options.
@@ -28,7 +27,7 @@
             <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
             <returns>true if the regular expression finds a match; otherwise, false.</returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
+        <member name="M:RegularExtensions.StringExtensions.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
             <summary>
             Indicates whether the specified regular expression finds a match in the specified input string,
             using the specified matching options and time-out interval.
@@ -41,7 +40,7 @@
             </param>
             <returns>true if the regular expression finds a match; otherwise, false.</returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.Match(System.String,System.String)">
+        <member name="M:RegularExtensions.StringExtensions.Match(System.String,System.String)">
             <summary>
             Searches the specified input string for the first occurrence of the specified regular expression.
             </summary>
@@ -49,7 +48,7 @@
             <param name="regex">The regular expression pattern to match.</param>
             <returns>An object that contains information about the match.</returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
+        <member name="M:RegularExtensions.StringExtensions.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
             <summary>
             Searches the input string for the first occurrence of the specified regular expression,
             using the specified matching options.
@@ -59,7 +58,7 @@
             <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
             <returns>An object that contains information about the match.</returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
+        <member name="M:RegularExtensions.StringExtensions.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
             <summary>
             Searches the input string for the first occurrence of the specified regular expression,
             using the specified matching options and time-out interval.
@@ -72,7 +71,7 @@
             </param>
             <returns>An object that contains information about the match.</returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.Matches(System.String,System.String)">
+        <member name="M:RegularExtensions.StringExtensions.Matches(System.String,System.String)">
             <summary>
             Searches the specified input string for all occurrences of a specified regular expression.
             </summary>
@@ -83,7 +82,7 @@
             If no matches are found, the method returns an empty collection object.
             </returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
+        <member name="M:RegularExtensions.StringExtensions.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
             <summary>
             Searches the specified input string for all occurrences of a specified regular expression,
             using the specified matching options.
@@ -96,7 +95,7 @@
             If no matches are found, the method returns an empty collection object.
             </returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
+        <member name="M:RegularExtensions.StringExtensions.Matches(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
             <summary>
             Searches the input string for the first occurrence of the specified regular expression,
             using the specified matching options and time-out interval.
@@ -112,7 +111,7 @@
             If no matches are found, the method returns an empty collection object.
             </returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.EnumerateMatches(System.String,System.String)">
+        <member name="M:RegularExtensions.StringExtensions.EnumerateMatches(System.String,System.String)">
             <summary>
             Searches the specified input string for all occurrences of a specified regular expression.
             </summary>
@@ -120,7 +119,7 @@
             <param name="regex">The regular expression pattern to match.</param>
             <returns>The result of text.Matches(...) cast as an IEnumerable of Match objects</returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.EnumerateMatches(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
+        <member name="M:RegularExtensions.StringExtensions.EnumerateMatches(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
             <summary>
             Searches the specified input string for all occurrences of a specified regular expression,
             using the specified matching options.
@@ -130,7 +129,7 @@
             <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
             <returns>The result of text.Matches(...) cast as an IEnumerable of Match objects</returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.EnumerateMatches(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
+        <member name="M:RegularExtensions.StringExtensions.EnumerateMatches(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
             <summary>
             Searches the input string for the first occurrence of the specified regular expression,
             using the specified matching options and time-out interval.
@@ -143,7 +142,7 @@
             </param>
             <returns>The result of text.Matches(...) cast as an IEnumerable of Match objects</returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.RegexReplace(System.String,System.String,System.String)">
+        <member name="M:RegularExtensions.StringExtensions.RegexReplace(System.String,System.String,System.String)">
             <summary>
             In a specified input string, replaces all strings that match a specified regular expression with a specified replacement string.
             </summary>
@@ -155,7 +154,7 @@
             If pattern is not matched in the current instance, the method returns the current instance unchanged.
             </returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.RegexReplace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
+        <member name="M:RegularExtensions.StringExtensions.RegexReplace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
             <summary>
             In a specified input string, replaces all strings that match a specified regular expression with a specified replacement string.
             Specified options modify the matching operation.
@@ -169,7 +168,7 @@
             If pattern is not matched in the current instance, the method returns the current instance unchanged.
             </returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.RegexReplace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
+        <member name="M:RegularExtensions.StringExtensions.RegexReplace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
             <summary>
             In a specified input string, replaces all strings that match a specified regular expression with a specified replacement string.
             Additional parameters specify options that modify the matching operation and a time-out interval if no match is found.
@@ -186,7 +185,7 @@
             If pattern is not matched in the current instance, the method returns the current instance unchanged.
             </returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.RegexReplace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator)">
+        <member name="M:RegularExtensions.StringExtensions.RegexReplace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator)">
             <summary>
             In a specified input string, replaces all strings that match a specified regular expression with a string returned by a MatchEvaluator delegate.
             </summary>
@@ -198,7 +197,7 @@
             If pattern is not matched in the current instance, the method returns the current instance unchanged.
             </returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.RegexReplace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator,System.Text.RegularExpressions.RegexOptions)">
+        <member name="M:RegularExtensions.StringExtensions.RegexReplace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator,System.Text.RegularExpressions.RegexOptions)">
             <summary>
             In a specified input string, replaces all strings that match a specified regular expression with a string returned by a MatchEvaluator delegate.
             Specified options modify the matching operation.
@@ -212,7 +211,7 @@
             If pattern is not matched in the current instance, the method returns the current instance unchanged.
             </returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.RegexReplace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
+        <member name="M:RegularExtensions.StringExtensions.RegexReplace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
             <summary>
             In a specified input string, replaces all substrings that match a specified regular expression with a string returned by a MatchEvaluator delegate.
             Additional parameters specify options that modify the matching operation and a time-out interval if no match is found.
@@ -229,7 +228,7 @@
             If pattern is not matched in the current instance, the method returns the current instance unchanged.
             </returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.RegexSplit(System.String,System.String)">
+        <member name="M:RegularExtensions.StringExtensions.RegexSplit(System.String,System.String)">
             <summary>
             Splits an input string into an array of substrings at the positions defined by a regular expression pattern.
             </summary>
@@ -237,7 +236,7 @@
             <param name="regex">The regular expression pattern to match.</param>
             <returns>An array of strings.</returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.RegexSplit(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
+        <member name="M:RegularExtensions.StringExtensions.RegexSplit(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
             <summary>
             Splits an input string into an array of substrings at the positions defined by a specified regular expression pattern.
             Specified options modify the matching operation.
@@ -247,7 +246,7 @@
             <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
             <returns>An array of strings.</returns>
         </member>
-        <member name="M:RegExtensions.StringExtensions.RegexSplit(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
+        <member name="M:RegularExtensions.StringExtensions.RegexSplit(System.String,System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)">
             <summary>
             Splits an input string into an array of substrings at the positions defined by a specified regular expression pattern.
             Additional parameters specify options that modify the matching operation and a time-out interval if no match is found.

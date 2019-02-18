@@ -54,7 +54,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RegExtensions\RegExtensions.csproj">
+    <ProjectReference Include="..\RegularExtensions\RegularExtensions.csproj">
       <Project>{b903aae7-17ba-431d-bc95-99f769e93e9a}</Project>
       <Name>RegExtensions</Name>
     </ProjectReference>
