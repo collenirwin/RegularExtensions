@@ -1,4 +1,4 @@
-# RegExtensions
+# RegularExtensions
 C# extension methods for Regular Expressions
 
 This small project aims to provide extension method versions of every `static` method in the [`System.Text.RegularExpressions.Regex`](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex?view=netframework-4.7.1) class. Wrapped methods include `IsMatch`, `Match`, `Matches`, `Replace` (use `RegexReplace`), and `Split` (use `RegexSplit`) with all of their overloads.
