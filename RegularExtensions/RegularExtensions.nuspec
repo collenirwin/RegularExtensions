@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/collenirwin/RegularExtensions</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Regular expression extension methods for string</description>
+    <releaseNotes>Initail release</releaseNotes>
+    <copyright>Copyright Collen Irwin 2019</copyright>
+    <tags>regex extension regular expressions</tags>
+  </metadata>
+</package>
