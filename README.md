@@ -5,6 +5,11 @@ This small project aims to provide extension method versions of every `static` m
 
 `EnumerateMatches` is currently the only addition. It simply casts the result of `Matches` to `IEnumerable<Match>`.
 
+# Installation
+
+### [NuGet Package](https://www.nuget.org/packages/RegularExtensions)
+`Install-Package RegularExtensions`
+
 # Examples
 
 ### IsMatch
