@@ -17,6 +17,9 @@ namespace RegularExtensions
         /// </summary>
         /// <param name="text">The string to search for a match.</param>
         /// <param name="regex">The regular expression pattern to match.</param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="RegexMatchTimeoutException" />
         /// <returns>true if the regular expression finds a match; otherwise, false.</returns>
         public static bool IsMatch(this string text, string regex)
         {
@@ -30,6 +33,10 @@ namespace RegularExtensions
         /// <param name="text">The string to search for a match.</param>
         /// <param name="regex">The regular expression pattern to match.</param>
         /// <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="ArgumentOutOfRangeException" />
+        /// <exception cref="RegexMatchTimeoutException" />
         /// <returns>true if the regular expression finds a match; otherwise, false.</returns>
         public static bool IsMatch(this string text, string regex,
             RegexOptions options)
@@ -47,6 +54,10 @@ namespace RegularExtensions
         /// <param name="timeout">
         /// A time-out interval, or <see cref="Regex.InfiniteMatchTimeout"/> to indicate that the method should not time out.
         /// </param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="ArgumentOutOfRangeException" />
+        /// <exception cref="RegexMatchTimeoutException" />
         /// <returns>true if the regular expression finds a match; otherwise, false.</returns>
         public static bool IsMatch(this string text, string regex,
             RegexOptions options, TimeSpan timeout)
@@ -63,6 +74,9 @@ namespace RegularExtensions
         /// </summary>
         /// <param name="text">The string to search for a match.</param>
         /// <param name="regex">The regular expression pattern to match.</param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="RegexMatchTimeoutException" />
         /// <returns>An object that contains information about the match.</returns>
         public static Match Match(this string text, string regex)
         {
@@ -76,6 +90,10 @@ namespace RegularExtensions
         /// <param name="text">The string to search for a match.</param>
         /// <param name="regex">The regular expression pattern to match.</param>
         /// <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="ArgumentOutOfRangeException" />
+        /// <exception cref="RegexMatchTimeoutException" />
         /// <returns>An object that contains information about the match.</returns>
         public static Match Match(this string text, string regex,
             RegexOptions options)
@@ -93,6 +111,10 @@ namespace RegularExtensions
         /// <param name="timeout">
         /// A time-out interval, or <see cref="Regex.InfiniteMatchTimeout"/> to indicate that the method should not time out.
         /// </param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="ArgumentOutOfRangeException" />
+        /// <exception cref="RegexMatchTimeoutException" />
         /// <returns>An object that contains information about the match.</returns>
         public static Match Match(this string text, string regex,
             RegexOptions options, TimeSpan timeout)
@@ -109,6 +131,8 @@ namespace RegularExtensions
         /// </summary>
         /// <param name="text">The string to search for a match.</param>
         /// <param name="regex">The regular expression pattern to match.</param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
         /// <returns>
         /// A collection of the Match objects found by the search.
         /// If no matches are found, the method returns an empty collection object.
@@ -125,6 +149,9 @@ namespace RegularExtensions
         /// <param name="text">The string to search for a match.</param>
         /// <param name="regex">The regular expression pattern to match.</param>
         /// <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="ArgumentOutOfRangeException" />
         /// <returns>
         /// A collection of the Match objects found by the search.
         /// If no matches are found, the method returns an empty collection object.
@@ -145,6 +172,9 @@ namespace RegularExtensions
         /// <param name="timeout">
         /// A time-out interval, or <see cref="Regex.InfiniteMatchTimeout"/> to indicate that the method should not time out.
         /// </param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="ArgumentOutOfRangeException" />
         /// <returns>
         /// A collection of the Match objects found by the search.
         /// If no matches are found, the method returns an empty collection object.
@@ -160,6 +190,8 @@ namespace RegularExtensions
         /// </summary>
         /// <param name="text">The string to search for a match.</param>
         /// <param name="regex">The regular expression pattern to match.</param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
         /// <returns>The result of text.Matches(...) cast as an IEnumerable of Match objects</returns>
         public static IEnumerable<Match> EnumerateMatches(this string text, string regex)
         {
@@ -173,6 +205,9 @@ namespace RegularExtensions
         /// <param name="text">The string to search for a match.</param>
         /// <param name="regex">The regular expression pattern to match.</param>
         /// <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="ArgumentOutOfRangeException" />
         /// <returns>The result of text.Matches(...) cast as an IEnumerable of Match objects</returns>
         public static IEnumerable<Match> EnumerateMatches(this string text, string regex,
             RegexOptions options)
@@ -190,6 +225,9 @@ namespace RegularExtensions
         /// <param name="timeout">
         /// A time-out interval, or <see cref="Regex.InfiniteMatchTimeout"/> to indicate that the method should not time out.
         /// </param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="ArgumentOutOfRangeException" />
         /// <returns>The result of text.Matches(...) cast as an IEnumerable of Match objects</returns>
         public static IEnumerable<Match> EnumerateMatches(this string text, string regex,
             RegexOptions options, TimeSpan timeout)
@@ -207,6 +245,9 @@ namespace RegularExtensions
         /// <param name="text">The string to search for a match.</param>
         /// <param name="regex">The regular expression pattern to match.</param>
         /// <param name="replacement">The replacement string.</param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="RegexMatchTimeoutException" />
         /// <returns>
         /// A new string that is identical to the input string, except that the replacement string takes the place of each matched string.
         /// If pattern is not matched in the current instance, the method returns the current instance unchanged.
@@ -224,6 +265,10 @@ namespace RegularExtensions
         /// <param name="regex">The regular expression pattern to match.</param>
         /// <param name="replacement">The replacement string.</param>
         /// <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="ArgumentOutOfRangeException" />
+        /// <exception cref="RegexMatchTimeoutException" />
         /// <returns>
         /// A new string that is identical to the input string, except that the replacement string takes the place of each matched string.
         /// If pattern is not matched in the current instance, the method returns the current instance unchanged.
@@ -245,6 +290,10 @@ namespace RegularExtensions
         /// <param name="timeout">
         /// A time-out interval, or <see cref="Regex.InfiniteMatchTimeout"/> to indicate that the method should not time out.
         /// </param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="ArgumentOutOfRangeException" />
+        /// <exception cref="RegexMatchTimeoutException" />
         /// <returns>
         /// A new string that is identical to the input string, except that the replacement string takes the place of each matched string.
         /// If pattern is not matched in the current instance, the method returns the current instance unchanged.
@@ -256,11 +305,18 @@ namespace RegularExtensions
         }
 
         /// <summary>
-        /// In a specified input string, replaces all strings that match a specified regular expression with a string returned by a MatchEvaluator delegate.
+        /// In a specified input string,
+        /// replaces all strings that match a specified regular expression with a string returned by a MatchEvaluator delegate.
         /// </summary>
         /// <param name="text">The string to search for a match.</param>
         /// <param name="regex">The regular expression pattern to match.</param>
-        /// <param name="evaluator">A custom method that examines each match and returns either the original matched string or a replacement string.</param>
+        /// <param name="evaluator">
+        /// A custom method that examines each match and returns either the original matched string or a replacement string.
+        /// </param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="ArgumentOutOfRangeException" />
+        /// <exception cref="RegexMatchTimeoutException" />
         /// <returns>
         /// A new string that is identical to the input string, except that the replacement string takes the place of each matched string.
         /// If pattern is not matched in the current instance, the method returns the current instance unchanged.
@@ -271,13 +327,20 @@ namespace RegularExtensions
         }
 
         /// <summary>
-        /// In a specified input string, replaces all strings that match a specified regular expression with a string returned by a MatchEvaluator delegate.
+        /// In a specified input string,
+        /// replaces all strings that match a specified regular expression with a string returned by a MatchEvaluator delegate.
         /// Specified options modify the matching operation.
         /// </summary>
         /// <param name="text">The string to search for a match.</param>
         /// <param name="regex">The regular expression pattern to match.</param>
-        /// <param name="evaluator">A custom method that examines each match and returns either the original matched string or a replacement string.</param>
+        /// <param name="evaluator">
+        /// A custom method that examines each match and returns either the original matched string or a replacement string.
+        /// </param>
         /// <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="ArgumentOutOfRangeException" />
+        /// <exception cref="RegexMatchTimeoutException" />
         /// <returns>
         /// A new string that is identical to the input string, except that the replacement string takes the place of each matched string.
         /// If pattern is not matched in the current instance, the method returns the current instance unchanged.
@@ -289,16 +352,23 @@ namespace RegularExtensions
         }
 
         /// <summary>
-        /// In a specified input string, replaces all substrings that match a specified regular expression with a string returned by a MatchEvaluator delegate.
+        /// In a specified input string,
+        /// replaces all substrings that match a specified regular expression with a string returned by a MatchEvaluator delegate.
         /// Additional parameters specify options that modify the matching operation and a time-out interval if no match is found.
         /// </summary>
         /// <param name="text">The string to search for a match.</param>
         /// <param name="regex">The regular expression pattern to match.</param>
-        /// <param name="evaluator">A custom method that examines each match and returns either the original matched string or a replacement string.</param>
+        /// <param name="evaluator">
+        /// A custom method that examines each match and returns either the original matched string or a replacement string.
+        /// </param>
         /// <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
         /// <param name="timeout">
         /// A time-out interval, or <see cref="Regex.InfiniteMatchTimeout"/> to indicate that the method should not time out.
         /// </param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="ArgumentOutOfRangeException" />
+        /// <exception cref="RegexMatchTimeoutException" />
         /// <returns>
         /// A new string that is identical to the input string, except that the replacement string takes the place of each matched string.
         /// If pattern is not matched in the current instance, the method returns the current instance unchanged.
@@ -318,6 +388,9 @@ namespace RegularExtensions
         /// </summary>
         /// <param name="text">The string to split.</param>
         /// <param name="regex">The regular expression pattern to match.</param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="RegexMatchTimeoutException" />
         /// <returns>An array of strings.</returns>
         public static string[] RegexSplit(this string text, string regex)
         {
@@ -331,6 +404,10 @@ namespace RegularExtensions
         /// <param name="text">The string to split.</param>
         /// <param name="regex">The regular expression pattern to match.</param>
         /// <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="ArgumentOutOfRangeException" />
+        /// <exception cref="RegexMatchTimeoutException" />
         /// <returns>An array of strings.</returns>
         public static string[] RegexSplit(this string text, string regex,
             RegexOptions options)
@@ -348,11 +425,38 @@ namespace RegularExtensions
         /// <param name="timeout">
         /// A time-out interval, or <see cref="Regex.InfiniteMatchTimeout"/> to indicate that the method should not time out.
         /// </param>
+        /// <exception cref="ArgumentException" />
+        /// <exception cref="ArgumentNullException" />
+        /// <exception cref="ArgumentOutOfRangeException" />
+        /// <exception cref="RegexMatchTimeoutException" />
         /// <returns>An array of strings.</returns>
         public static string[] RegexSplit(this string text, string regex,
             RegexOptions options, TimeSpan timeout)
         {
             return Regex.Split(text, regex, options, timeout);
+        }
+
+        #endregion
+
+        #region Utils
+
+        /// <summary>
+        /// Concatenates the members of a constructed <see cref="IEnumerable{T}"/> collection of type <see cref="string"/>,
+        /// using the specified separator between each member.
+        /// </summary>
+        /// <param name="values">A collection that contains the strings to concatenate.</param>
+        /// <param name="separator">
+        /// The string to use as a separator.
+        /// separator is included in the returned string only if values has more than one element.
+        /// </param>
+        /// <exception cref="ArgumentNullException" />
+        /// <returns>
+        /// A string that consists of the members of values delimited by the separator string.
+        /// If values has no members, the method returns <see cref="string.Empty"/>.
+        /// </returns>
+        public static string Join(this IEnumerable<string> values, string separator)
+        {
+            return string.Join(separator, values);
         }
 
         #endregion

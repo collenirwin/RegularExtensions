@@ -1,17 +1,18 @@
-<?xml version="1.0"?>
-<package >
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <id>RegularExtensions</id>
+    <version>1.2.0</version>
+    <title>RegularExtensions</title>
+    <authors>Collen Irwin</authors>
+    <owners>Collen Irwin</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/collenirwin/RegularExtensions</projectUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Regular expression extension methods for string</description>
-    <releaseNotes>Initail release</releaseNotes>
+    <releaseNotes>Now targetting netstandard2.0</releaseNotes>
     <copyright>Copyright Collen Irwin 2019</copyright>
     <tags>regex extension regular expressions</tags>
+    <dependencies />
   </metadata>
 </package>
